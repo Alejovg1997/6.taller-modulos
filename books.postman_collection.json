@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "8325c85e-b6c8-4be8-a6b1-c6d707453505",
+		"name": "books",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29903583"
+	},
+	"item": [
+		{
+			"name": "leer data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/read-file",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"read-file"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ingresar un libro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n   {\r\n  \"title\": \"Juego de tronos\",\r\n  \"author\": \"George R. R. Martin\",\r\n  \"publicationYear\": 1996,\r\n  \"isbn\": \"7894567845\",\r\n  \"language\": \"German\",\r\n  \"pageCount\": 250,\r\n  \"price\": 35.99,\r\n  \"isAvailable\": false\r\n}\r\n\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mostrar un libro",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar informacion de un libro",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar un libro",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/books/9465770c-286d-4783-a008-4abe157fe508",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"9465770c-286d-4783-a008-4abe157fe508"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener libro por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/books/e61b1518-af03-4b53-8ca8-c9a7fdc557e9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"e61b1518-af03-4b53-8ca8-c9a7fdc557e9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
